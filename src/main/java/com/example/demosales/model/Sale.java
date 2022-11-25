@@ -21,7 +21,7 @@ public class Sale {
     private LocalDateTime dateTime;
 
     @ManyToOne
-    @JoinColumn(name = "id_person", nullable = false, foreignKey = @ForeignKey(name = "FK_SALE_PATIENT"))
+    @JoinColumn(name = "id_person", nullable = false, foreignKey = @ForeignKey(name = "FK_SALE_PERSON"))
     private Person person;
 
     private double total;
